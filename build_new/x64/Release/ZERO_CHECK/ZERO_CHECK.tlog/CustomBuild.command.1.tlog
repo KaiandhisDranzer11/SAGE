@@ -1,0 +1,10 @@
+^E:\WORK\SAGE\BUILD_NEW\CMAKEFILES\2B5B159B70EFC28F518D25B0D7510997\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/Work/SAGE -BE:/Work/SAGE/build_new --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file E:/Work/SAGE/build_new/SAGE.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

@@ -1,0 +1,187 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "src/poe/RelWithDebInfo/sage_poe.exe"
+		},
+		{
+			"path" : "src/poe/RelWithDebInfo/sage_poe.pdb"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_executable",
+			"target_link_libraries"
+		],
+		"files" : 
+		[
+			"src/poe/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 3,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 5,
+				"parent" : 0
+			}
+		]
+	},
+	"codemodelVersion" : 
+	{
+		"major" : 2,
+		"minor" : 9
+	},
+	"compileDependencies" : 
+	[
+		{
+			"backtrace" : 2,
+			"id" : "sage_core::@0618756b1ff51bca1a0e"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "sage_types::@d9f9dc2ffe2762627041"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "sage_infra::@475a3b6856aaf6539cbf"
+		}
+	],
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "/DWIN32 /D_WINDOWS /EHsc /W4 /WX /permissive- /utf-8 /wd4100 /Zi /O2 /Ob1 /DNDEBUG -std:c++20 -MD"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 2,
+					"path" : "E:/Work/SAGE/src/core"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "E:/Work/SAGE/src/types"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "E:/Work/SAGE/src/infra"
+				}
+			],
+			"language" : "CXX",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					1
+				],
+				"standard" : "20"
+			},
+			"sourceIndexes" : 
+			[
+				0
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df"
+		}
+	],
+	"id" : "sage_poe::@8f607f64d8453e2c878d",
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "/DWIN32 /D_WINDOWS /EHsc /W4 /WX /permissive- /utf-8 /wd4100 /Zi /O2 /Ob1 /DNDEBUG -MD",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "/machine:x64 /debug /INCREMENTAL",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "/subsystem:console",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "pthread.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "pthread.lib",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib",
+				"role" : "libraries"
+			}
+		],
+		"language" : "CXX"
+	},
+	"linkLibraries" : 
+	[
+		{
+			"backtrace" : 2,
+			"id" : "sage_core::@0618756b1ff51bca1a0e"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "sage_types::@d9f9dc2ffe2762627041"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "sage_infra::@475a3b6856aaf6539cbf"
+		},
+		{
+			"backtrace" : 2,
+			"fragment" : "pthread"
+		}
+	],
+	"name" : "sage_poe",
+	"nameOnDisk" : "sage_poe.exe",
+	"paths" : 
+	{
+		"build" : "src/poe",
+		"source" : "src/poe"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/poe/poe_main.cpp",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "EXECUTABLE"
+}

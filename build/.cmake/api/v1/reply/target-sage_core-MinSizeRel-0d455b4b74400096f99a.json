@@ -1,0 +1,55 @@
+{
+	"abstract" : true,
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"target_link_libraries"
+		],
+		"files" : 
+		[
+			"src/core/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 4,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 11,
+				"parent" : 0
+			}
+		]
+	},
+	"codemodelVersion" : 
+	{
+		"major" : 2,
+		"minor" : 9
+	},
+	"id" : "sage_core::@0618756b1ff51bca1a0e",
+	"interfaceLinkLibraries" : 
+	[
+		{
+			"backtrace" : 2,
+			"fragment" : "pthread"
+		}
+	],
+	"name" : "sage_core",
+	"paths" : 
+	{
+		"build" : "src/core",
+		"source" : "src/core"
+	},
+	"sources" : [],
+	"type" : "INTERFACE_LIBRARY"
+}

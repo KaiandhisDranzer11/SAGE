@@ -1,0 +1,36 @@
+# CMake generated Testfile for 
+# Source directory: E:/Work/SAGE/tests
+# Build directory: E:/Work/SAGE/build_new/tests
+# 
+# This file includes the relevant testing commands required for 
+# testing this directory and lists subdirectories to be tested as well.
+if(CTEST_CONFIGURATION_TYPE MATCHES "^([Dd][Ee][Bb][Uu][Gg])$")
+  add_test([=[core_tests]=] "E:/Work/SAGE/build_new/tests/Debug/test_core.exe")
+  set_tests_properties([=[core_tests]=] PROPERTIES  _BACKTRACE_TRIPLES "E:/Work/SAGE/tests/CMakeLists.txt;14;add_test;E:/Work/SAGE/tests/CMakeLists.txt;0;")
+elseif(CTEST_CONFIGURATION_TYPE MATCHES "^([Rr][Ee][Ll][Ee][Aa][Ss][Ee])$")
+  add_test([=[core_tests]=] "E:/Work/SAGE/build_new/tests/Release/test_core.exe")
+  set_tests_properties([=[core_tests]=] PROPERTIES  _BACKTRACE_TRIPLES "E:/Work/SAGE/tests/CMakeLists.txt;14;add_test;E:/Work/SAGE/tests/CMakeLists.txt;0;")
+elseif(CTEST_CONFIGURATION_TYPE MATCHES "^([Mm][Ii][Nn][Ss][Ii][Zz][Ee][Rr][Ee][Ll])$")
+  add_test([=[core_tests]=] "E:/Work/SAGE/build_new/tests/MinSizeRel/test_core.exe")
+  set_tests_properties([=[core_tests]=] PROPERTIES  _BACKTRACE_TRIPLES "E:/Work/SAGE/tests/CMakeLists.txt;14;add_test;E:/Work/SAGE/tests/CMakeLists.txt;0;")
+elseif(CTEST_CONFIGURATION_TYPE MATCHES "^([Rr][Ee][Ll][Ww][Ii][Tt][Hh][Dd][Ee][Bb][Ii][Nn][Ff][Oo])$")
+  add_test([=[core_tests]=] "E:/Work/SAGE/build_new/tests/RelWithDebInfo/test_core.exe")
+  set_tests_properties([=[core_tests]=] PROPERTIES  _BACKTRACE_TRIPLES "E:/Work/SAGE/tests/CMakeLists.txt;14;add_test;E:/Work/SAGE/tests/CMakeLists.txt;0;")
+else()
+  add_test([=[core_tests]=] NOT_AVAILABLE)
+endif()
+if(CTEST_CONFIGURATION_TYPE MATCHES "^([Dd][Ee][Bb][Uu][Gg])$")
+  add_test([=[audit_durability_tests]=] "E:/Work/SAGE/build_new/tests/Debug/test_audit_durability.exe")
+  set_tests_properties([=[audit_durability_tests]=] PROPERTIES  _BACKTRACE_TRIPLES "E:/Work/SAGE/tests/CMakeLists.txt;24;add_test;E:/Work/SAGE/tests/CMakeLists.txt;0;")
+elseif(CTEST_CONFIGURATION_TYPE MATCHES "^([Rr][Ee][Ll][Ee][Aa][Ss][Ee])$")
+  add_test([=[audit_durability_tests]=] "E:/Work/SAGE/build_new/tests/Release/test_audit_durability.exe")
+  set_tests_properties([=[audit_durability_tests]=] PROPERTIES  _BACKTRACE_TRIPLES "E:/Work/SAGE/tests/CMakeLists.txt;24;add_test;E:/Work/SAGE/tests/CMakeLists.txt;0;")
+elseif(CTEST_CONFIGURATION_TYPE MATCHES "^([Mm][Ii][Nn][Ss][Ii][Zz][Ee][Rr][Ee][Ll])$")
+  add_test([=[audit_durability_tests]=] "E:/Work/SAGE/build_new/tests/MinSizeRel/test_audit_durability.exe")
+  set_tests_properties([=[audit_durability_tests]=] PROPERTIES  _BACKTRACE_TRIPLES "E:/Work/SAGE/tests/CMakeLists.txt;24;add_test;E:/Work/SAGE/tests/CMakeLists.txt;0;")
+elseif(CTEST_CONFIGURATION_TYPE MATCHES "^([Rr][Ee][Ll][Ww][Ii][Tt][Hh][Dd][Ee][Bb][Ii][Nn][Ff][Oo])$")
+  add_test([=[audit_durability_tests]=] "E:/Work/SAGE/build_new/tests/RelWithDebInfo/test_audit_durability.exe")
+  set_tests_properties([=[audit_durability_tests]=] PROPERTIES  _BACKTRACE_TRIPLES "E:/Work/SAGE/tests/CMakeLists.txt;24;add_test;E:/Work/SAGE/tests/CMakeLists.txt;0;")
+else()
+  add_test([=[audit_durability_tests]=] NOT_AVAILABLE)
+endif()

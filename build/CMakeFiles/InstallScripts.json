@@ -1,0 +1,16 @@
+{
+	"InstallScripts" : 
+	[
+		"E:/Work/SAGE/build/cmake_install.cmake",
+		"E:/Work/SAGE/build/src/core/cmake_install.cmake",
+		"E:/Work/SAGE/build/src/types/cmake_install.cmake",
+		"E:/Work/SAGE/build/src/infra/cmake_install.cmake",
+		"E:/Work/SAGE/build/src/hpcm/cmake_install.cmake",
+		"E:/Work/SAGE/build/src/cal/cmake_install.cmake",
+		"E:/Work/SAGE/build/src/ade/cmake_install.cmake",
+		"E:/Work/SAGE/build/src/rme/cmake_install.cmake",
+		"E:/Work/SAGE/build/src/poe/cmake_install.cmake",
+		"E:/Work/SAGE/build/tests/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

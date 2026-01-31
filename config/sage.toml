@@ -1,0 +1,30 @@
+[system]
+name = "SAGE"
+version = "1.0.0"
+
+[risk]
+max_position_per_symbol = 1000000
+max_total_exposure = 100000.0
+daily_loss_limit = 10000.0
+concentration_limit = 0.25
+
+[buffers]
+ring_buffer_size = 1048576  # 2^20
+
+[exchanges.binance]
+enabled = true
+websocket_url = "wss://stream.binance.com:9443/ws/btcusdt@trade"
+api_key_vault_path = "binance/api_key"
+
+[exchanges.coinbase]
+enabled = false
+websocket_url = "wss://ws-feed.exchange.coinbase.com"
+api_key_vault_path = "coinbase/api_key"
+
+[audit]
+# Audit log configuration for compliance and durability
+path = "logs/audit.log"
+max_size_mb = 100
+flush_threshold = 100        # Flush to kernel buffer every N entries
+fsync_interval_ms = 50       # Background fsync interval (10-100ms typical)
+                             # Lower = more durable, higher = less latency impact

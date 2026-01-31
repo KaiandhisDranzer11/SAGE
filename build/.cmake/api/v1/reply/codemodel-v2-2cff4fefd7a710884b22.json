@@ -1,0 +1,1284 @@
+{
+	"configurations" : 
+	[
+		{
+			"abstractTargets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "Threads::Threads::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Threads__Threads-Debug-06800abed6eab3568bd1.json",
+					"name" : "Threads::Threads",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "sage_core::@0618756b1ff51bca1a0e",
+					"jsonFile" : "target-sage_core-Debug-0d455b4b74400096f99a.json",
+					"name" : "sage_core",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "sage_hpcm::@93dec59f42cc1a7800f0",
+					"jsonFile" : "target-sage_hpcm-Debug-6e56b1e3a1269772d2fc.json",
+					"name" : "sage_hpcm",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "sage_infra::@475a3b6856aaf6539cbf",
+					"jsonFile" : "target-sage_infra-Debug-153cdda969aa5ded8136.json",
+					"name" : "sage_infra",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "sage_types::@d9f9dc2ffe2762627041",
+					"jsonFile" : "target-sage_types-Debug-b7b80b3e085f07983515.json",
+					"name" : "sage_types",
+					"projectIndex" : 0
+				}
+			],
+			"directories" : 
+			[
+				{
+					"abstractTargetIndexes" : 
+					[
+						0
+					],
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9
+					],
+					"jsonFile" : "directory-.-Debug-f6f22219c74102c3da70.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1
+					]
+				},
+				{
+					"abstractTargetIndexes" : 
+					[
+						1
+					],
+					"build" : "src/core",
+					"jsonFile" : "directory-src.core-Debug-03d2379c43fd279a9a62.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "src/core"
+				},
+				{
+					"abstractTargetIndexes" : 
+					[
+						4
+					],
+					"build" : "src/types",
+					"jsonFile" : "directory-src.types-Debug-c765100d5e862fbe447e.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "src/types"
+				},
+				{
+					"abstractTargetIndexes" : 
+					[
+						3
+					],
+					"build" : "src/infra",
+					"jsonFile" : "directory-src.infra-Debug-11e16ad3d312ee8aa8b2.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "src/infra"
+				},
+				{
+					"abstractTargetIndexes" : 
+					[
+						2
+					],
+					"build" : "src/hpcm",
+					"jsonFile" : "directory-src.hpcm-Debug-175f4972f1f0159b6000.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "src/hpcm"
+				},
+				{
+					"build" : "src/cal",
+					"jsonFile" : "directory-src.cal-Debug-50e16bc320f8365d23df.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "src/cal",
+					"targetIndexes" : 
+					[
+						4
+					]
+				},
+				{
+					"build" : "src/ade",
+					"jsonFile" : "directory-src.ade-Debug-ce8551dec0d740c47b8b.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "src/ade",
+					"targetIndexes" : 
+					[
+						3
+					]
+				},
+				{
+					"build" : "src/rme",
+					"jsonFile" : "directory-src.rme-Debug-7f3b5268e9c7a2dc3c06.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "src/rme",
+					"targetIndexes" : 
+					[
+						6
+					]
+				},
+				{
+					"build" : "src/poe",
+					"jsonFile" : "directory-src.poe-Debug-6a5028b315265f70c1ac.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "src/poe",
+					"targetIndexes" : 
+					[
+						5
+					]
+				},
+				{
+					"build" : "tests",
+					"jsonFile" : "directory-tests-Debug-74d1b11f0521a8d27dd5.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "tests",
+					"targetIndexes" : 
+					[
+						2,
+						7,
+						8
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"abstractTargetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4
+					],
+					"directoryIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9
+					],
+					"name" : "SAGE",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ALL_BUILD::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ALL_BUILD-Debug-b6b43f7fd7c6e87b8cb5.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ZERO_CHECK-Debug-8596b1155df8eefe3a4b.json",
+					"name" : "ZERO_CHECK",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 9,
+					"id" : "benchmark_latency::@a44f0ac069e85531cdee",
+					"jsonFile" : "target-benchmark_latency-Debug-9c11b493a92b04aa204d.json",
+					"name" : "benchmark_latency",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "sage_ade::@24ea2e42cd7dff5f2e4b",
+					"jsonFile" : "target-sage_ade-Debug-ae12d08e7c749e9ec061.json",
+					"name" : "sage_ade",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "sage_cal::@0bcb47ac1c1a18101965",
+					"jsonFile" : "target-sage_cal-Debug-fbbc2c765026f91404d6.json",
+					"name" : "sage_cal",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 8,
+					"id" : "sage_poe::@8f607f64d8453e2c878d",
+					"jsonFile" : "target-sage_poe-Debug-5da0a93a0639db6df6c1.json",
+					"name" : "sage_poe",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 7,
+					"id" : "sage_rme::@15f6e08049de0fa295dc",
+					"jsonFile" : "target-sage_rme-Debug-697360f8337331fcff5a.json",
+					"name" : "sage_rme",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 9,
+					"id" : "test_audit_durability::@a44f0ac069e85531cdee",
+					"jsonFile" : "target-test_audit_durability-Debug-faa53e4e15f94b9718fc.json",
+					"name" : "test_audit_durability",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 9,
+					"id" : "test_core::@a44f0ac069e85531cdee",
+					"jsonFile" : "target-test_core-Debug-7629b05d737ec4193979.json",
+					"name" : "test_core",
+					"projectIndex" : 0
+				}
+			]
+		},
+		{
+			"abstractTargets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "Threads::Threads::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Threads__Threads-Release-06800abed6eab3568bd1.json",
+					"name" : "Threads::Threads",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "sage_core::@0618756b1ff51bca1a0e",
+					"jsonFile" : "target-sage_core-Release-0d455b4b74400096f99a.json",
+					"name" : "sage_core",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "sage_hpcm::@93dec59f42cc1a7800f0",
+					"jsonFile" : "target-sage_hpcm-Release-6e56b1e3a1269772d2fc.json",
+					"name" : "sage_hpcm",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "sage_infra::@475a3b6856aaf6539cbf",
+					"jsonFile" : "target-sage_infra-Release-153cdda969aa5ded8136.json",
+					"name" : "sage_infra",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "sage_types::@d9f9dc2ffe2762627041",
+					"jsonFile" : "target-sage_types-Release-b7b80b3e085f07983515.json",
+					"name" : "sage_types",
+					"projectIndex" : 0
+				}
+			],
+			"directories" : 
+			[
+				{
+					"abstractTargetIndexes" : 
+					[
+						0
+					],
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9
+					],
+					"jsonFile" : "directory-.-Release-f6f22219c74102c3da70.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1
+					]
+				},
+				{
+					"abstractTargetIndexes" : 
+					[
+						1
+					],
+					"build" : "src/core",
+					"jsonFile" : "directory-src.core-Release-03d2379c43fd279a9a62.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "src/core"
+				},
+				{
+					"abstractTargetIndexes" : 
+					[
+						4
+					],
+					"build" : "src/types",
+					"jsonFile" : "directory-src.types-Release-c765100d5e862fbe447e.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "src/types"
+				},
+				{
+					"abstractTargetIndexes" : 
+					[
+						3
+					],
+					"build" : "src/infra",
+					"jsonFile" : "directory-src.infra-Release-11e16ad3d312ee8aa8b2.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "src/infra"
+				},
+				{
+					"abstractTargetIndexes" : 
+					[
+						2
+					],
+					"build" : "src/hpcm",
+					"jsonFile" : "directory-src.hpcm-Release-175f4972f1f0159b6000.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "src/hpcm"
+				},
+				{
+					"build" : "src/cal",
+					"jsonFile" : "directory-src.cal-Release-50e16bc320f8365d23df.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "src/cal",
+					"targetIndexes" : 
+					[
+						4
+					]
+				},
+				{
+					"build" : "src/ade",
+					"jsonFile" : "directory-src.ade-Release-ce8551dec0d740c47b8b.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "src/ade",
+					"targetIndexes" : 
+					[
+						3
+					]
+				},
+				{
+					"build" : "src/rme",
+					"jsonFile" : "directory-src.rme-Release-7f3b5268e9c7a2dc3c06.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "src/rme",
+					"targetIndexes" : 
+					[
+						6
+					]
+				},
+				{
+					"build" : "src/poe",
+					"jsonFile" : "directory-src.poe-Release-6a5028b315265f70c1ac.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "src/poe",
+					"targetIndexes" : 
+					[
+						5
+					]
+				},
+				{
+					"build" : "tests",
+					"jsonFile" : "directory-tests-Release-74d1b11f0521a8d27dd5.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "tests",
+					"targetIndexes" : 
+					[
+						2,
+						7,
+						8
+					]
+				}
+			],
+			"name" : "Release",
+			"projects" : 
+			[
+				{
+					"abstractTargetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4
+					],
+					"directoryIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9
+					],
+					"name" : "SAGE",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ALL_BUILD::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ALL_BUILD-Release-b6b43f7fd7c6e87b8cb5.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ZERO_CHECK-Release-8596b1155df8eefe3a4b.json",
+					"name" : "ZERO_CHECK",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 9,
+					"id" : "benchmark_latency::@a44f0ac069e85531cdee",
+					"jsonFile" : "target-benchmark_latency-Release-8179c459f128994f0e67.json",
+					"name" : "benchmark_latency",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "sage_ade::@24ea2e42cd7dff5f2e4b",
+					"jsonFile" : "target-sage_ade-Release-239ffbc3f68af9dda561.json",
+					"name" : "sage_ade",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "sage_cal::@0bcb47ac1c1a18101965",
+					"jsonFile" : "target-sage_cal-Release-e8672b8e5d0c0941fb6c.json",
+					"name" : "sage_cal",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 8,
+					"id" : "sage_poe::@8f607f64d8453e2c878d",
+					"jsonFile" : "target-sage_poe-Release-bffbf5a61856a073c098.json",
+					"name" : "sage_poe",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 7,
+					"id" : "sage_rme::@15f6e08049de0fa295dc",
+					"jsonFile" : "target-sage_rme-Release-7dcaac876e85cea9766c.json",
+					"name" : "sage_rme",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 9,
+					"id" : "test_audit_durability::@a44f0ac069e85531cdee",
+					"jsonFile" : "target-test_audit_durability-Release-e4c3180313733a85649a.json",
+					"name" : "test_audit_durability",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 9,
+					"id" : "test_core::@a44f0ac069e85531cdee",
+					"jsonFile" : "target-test_core-Release-bf8496cf88544bca7a13.json",
+					"name" : "test_core",
+					"projectIndex" : 0
+				}
+			]
+		},
+		{
+			"abstractTargets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "Threads::Threads::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Threads__Threads-MinSizeRel-06800abed6eab3568bd1.json",
+					"name" : "Threads::Threads",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "sage_core::@0618756b1ff51bca1a0e",
+					"jsonFile" : "target-sage_core-MinSizeRel-0d455b4b74400096f99a.json",
+					"name" : "sage_core",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "sage_hpcm::@93dec59f42cc1a7800f0",
+					"jsonFile" : "target-sage_hpcm-MinSizeRel-6e56b1e3a1269772d2fc.json",
+					"name" : "sage_hpcm",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "sage_infra::@475a3b6856aaf6539cbf",
+					"jsonFile" : "target-sage_infra-MinSizeRel-153cdda969aa5ded8136.json",
+					"name" : "sage_infra",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "sage_types::@d9f9dc2ffe2762627041",
+					"jsonFile" : "target-sage_types-MinSizeRel-b7b80b3e085f07983515.json",
+					"name" : "sage_types",
+					"projectIndex" : 0
+				}
+			],
+			"directories" : 
+			[
+				{
+					"abstractTargetIndexes" : 
+					[
+						0
+					],
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9
+					],
+					"jsonFile" : "directory-.-MinSizeRel-f6f22219c74102c3da70.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1
+					]
+				},
+				{
+					"abstractTargetIndexes" : 
+					[
+						1
+					],
+					"build" : "src/core",
+					"jsonFile" : "directory-src.core-MinSizeRel-03d2379c43fd279a9a62.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "src/core"
+				},
+				{
+					"abstractTargetIndexes" : 
+					[
+						4
+					],
+					"build" : "src/types",
+					"jsonFile" : "directory-src.types-MinSizeRel-c765100d5e862fbe447e.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "src/types"
+				},
+				{
+					"abstractTargetIndexes" : 
+					[
+						3
+					],
+					"build" : "src/infra",
+					"jsonFile" : "directory-src.infra-MinSizeRel-11e16ad3d312ee8aa8b2.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "src/infra"
+				},
+				{
+					"abstractTargetIndexes" : 
+					[
+						2
+					],
+					"build" : "src/hpcm",
+					"jsonFile" : "directory-src.hpcm-MinSizeRel-175f4972f1f0159b6000.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "src/hpcm"
+				},
+				{
+					"build" : "src/cal",
+					"jsonFile" : "directory-src.cal-MinSizeRel-50e16bc320f8365d23df.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "src/cal",
+					"targetIndexes" : 
+					[
+						4
+					]
+				},
+				{
+					"build" : "src/ade",
+					"jsonFile" : "directory-src.ade-MinSizeRel-ce8551dec0d740c47b8b.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "src/ade",
+					"targetIndexes" : 
+					[
+						3
+					]
+				},
+				{
+					"build" : "src/rme",
+					"jsonFile" : "directory-src.rme-MinSizeRel-7f3b5268e9c7a2dc3c06.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "src/rme",
+					"targetIndexes" : 
+					[
+						6
+					]
+				},
+				{
+					"build" : "src/poe",
+					"jsonFile" : "directory-src.poe-MinSizeRel-6a5028b315265f70c1ac.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "src/poe",
+					"targetIndexes" : 
+					[
+						5
+					]
+				},
+				{
+					"build" : "tests",
+					"jsonFile" : "directory-tests-MinSizeRel-74d1b11f0521a8d27dd5.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "tests",
+					"targetIndexes" : 
+					[
+						2,
+						7,
+						8
+					]
+				}
+			],
+			"name" : "MinSizeRel",
+			"projects" : 
+			[
+				{
+					"abstractTargetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4
+					],
+					"directoryIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9
+					],
+					"name" : "SAGE",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ALL_BUILD::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ALL_BUILD-MinSizeRel-b6b43f7fd7c6e87b8cb5.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ZERO_CHECK-MinSizeRel-8596b1155df8eefe3a4b.json",
+					"name" : "ZERO_CHECK",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 9,
+					"id" : "benchmark_latency::@a44f0ac069e85531cdee",
+					"jsonFile" : "target-benchmark_latency-MinSizeRel-ec6da303504c6b6de0e2.json",
+					"name" : "benchmark_latency",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "sage_ade::@24ea2e42cd7dff5f2e4b",
+					"jsonFile" : "target-sage_ade-MinSizeRel-d35050fe347b5726e309.json",
+					"name" : "sage_ade",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "sage_cal::@0bcb47ac1c1a18101965",
+					"jsonFile" : "target-sage_cal-MinSizeRel-80dff58e6789c3b057fc.json",
+					"name" : "sage_cal",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 8,
+					"id" : "sage_poe::@8f607f64d8453e2c878d",
+					"jsonFile" : "target-sage_poe-MinSizeRel-36d7ac5a992233a76b23.json",
+					"name" : "sage_poe",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 7,
+					"id" : "sage_rme::@15f6e08049de0fa295dc",
+					"jsonFile" : "target-sage_rme-MinSizeRel-1c9ef3d58ac1dcdd01ac.json",
+					"name" : "sage_rme",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 9,
+					"id" : "test_audit_durability::@a44f0ac069e85531cdee",
+					"jsonFile" : "target-test_audit_durability-MinSizeRel-ba3fa9309743fb1e7753.json",
+					"name" : "test_audit_durability",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 9,
+					"id" : "test_core::@a44f0ac069e85531cdee",
+					"jsonFile" : "target-test_core-MinSizeRel-b774f0e3e8cfb1c930a5.json",
+					"name" : "test_core",
+					"projectIndex" : 0
+				}
+			]
+		},
+		{
+			"abstractTargets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "Threads::Threads::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Threads__Threads-RelWithDebInfo-06800abed6eab3568bd1.json",
+					"name" : "Threads::Threads",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "sage_core::@0618756b1ff51bca1a0e",
+					"jsonFile" : "target-sage_core-RelWithDebInfo-0d455b4b74400096f99a.json",
+					"name" : "sage_core",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "sage_hpcm::@93dec59f42cc1a7800f0",
+					"jsonFile" : "target-sage_hpcm-RelWithDebInfo-6e56b1e3a1269772d2fc.json",
+					"name" : "sage_hpcm",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "sage_infra::@475a3b6856aaf6539cbf",
+					"jsonFile" : "target-sage_infra-RelWithDebInfo-153cdda969aa5ded8136.json",
+					"name" : "sage_infra",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "sage_types::@d9f9dc2ffe2762627041",
+					"jsonFile" : "target-sage_types-RelWithDebInfo-b7b80b3e085f07983515.json",
+					"name" : "sage_types",
+					"projectIndex" : 0
+				}
+			],
+			"directories" : 
+			[
+				{
+					"abstractTargetIndexes" : 
+					[
+						0
+					],
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9
+					],
+					"jsonFile" : "directory-.-RelWithDebInfo-f6f22219c74102c3da70.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1
+					]
+				},
+				{
+					"abstractTargetIndexes" : 
+					[
+						1
+					],
+					"build" : "src/core",
+					"jsonFile" : "directory-src.core-RelWithDebInfo-03d2379c43fd279a9a62.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "src/core"
+				},
+				{
+					"abstractTargetIndexes" : 
+					[
+						4
+					],
+					"build" : "src/types",
+					"jsonFile" : "directory-src.types-RelWithDebInfo-c765100d5e862fbe447e.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "src/types"
+				},
+				{
+					"abstractTargetIndexes" : 
+					[
+						3
+					],
+					"build" : "src/infra",
+					"jsonFile" : "directory-src.infra-RelWithDebInfo-11e16ad3d312ee8aa8b2.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "src/infra"
+				},
+				{
+					"abstractTargetIndexes" : 
+					[
+						2
+					],
+					"build" : "src/hpcm",
+					"jsonFile" : "directory-src.hpcm-RelWithDebInfo-175f4972f1f0159b6000.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "src/hpcm"
+				},
+				{
+					"build" : "src/cal",
+					"jsonFile" : "directory-src.cal-RelWithDebInfo-50e16bc320f8365d23df.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "src/cal",
+					"targetIndexes" : 
+					[
+						4
+					]
+				},
+				{
+					"build" : "src/ade",
+					"jsonFile" : "directory-src.ade-RelWithDebInfo-ce8551dec0d740c47b8b.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "src/ade",
+					"targetIndexes" : 
+					[
+						3
+					]
+				},
+				{
+					"build" : "src/rme",
+					"jsonFile" : "directory-src.rme-RelWithDebInfo-7f3b5268e9c7a2dc3c06.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "src/rme",
+					"targetIndexes" : 
+					[
+						6
+					]
+				},
+				{
+					"build" : "src/poe",
+					"jsonFile" : "directory-src.poe-RelWithDebInfo-6a5028b315265f70c1ac.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "src/poe",
+					"targetIndexes" : 
+					[
+						5
+					]
+				},
+				{
+					"build" : "tests",
+					"jsonFile" : "directory-tests-RelWithDebInfo-74d1b11f0521a8d27dd5.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "tests",
+					"targetIndexes" : 
+					[
+						2,
+						7,
+						8
+					]
+				}
+			],
+			"name" : "RelWithDebInfo",
+			"projects" : 
+			[
+				{
+					"abstractTargetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4
+					],
+					"directoryIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9
+					],
+					"name" : "SAGE",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ALL_BUILD::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ALL_BUILD-RelWithDebInfo-b6b43f7fd7c6e87b8cb5.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ZERO_CHECK-RelWithDebInfo-8596b1155df8eefe3a4b.json",
+					"name" : "ZERO_CHECK",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 9,
+					"id" : "benchmark_latency::@a44f0ac069e85531cdee",
+					"jsonFile" : "target-benchmark_latency-RelWithDebInfo-dc226fe8f6b4a4cdc22e.json",
+					"name" : "benchmark_latency",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "sage_ade::@24ea2e42cd7dff5f2e4b",
+					"jsonFile" : "target-sage_ade-RelWithDebInfo-35def7e5d7dbfa9e51e7.json",
+					"name" : "sage_ade",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "sage_cal::@0bcb47ac1c1a18101965",
+					"jsonFile" : "target-sage_cal-RelWithDebInfo-55ac873cf626745c6f8e.json",
+					"name" : "sage_cal",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 8,
+					"id" : "sage_poe::@8f607f64d8453e2c878d",
+					"jsonFile" : "target-sage_poe-RelWithDebInfo-2bef8c60fae99cacba33.json",
+					"name" : "sage_poe",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 7,
+					"id" : "sage_rme::@15f6e08049de0fa295dc",
+					"jsonFile" : "target-sage_rme-RelWithDebInfo-c08297cb44c4c6997dc4.json",
+					"name" : "sage_rme",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 9,
+					"id" : "test_audit_durability::@a44f0ac069e85531cdee",
+					"jsonFile" : "target-test_audit_durability-RelWithDebInfo-a97798a18bfd24bf789a.json",
+					"name" : "test_audit_durability",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 9,
+					"id" : "test_core::@a44f0ac069e85531cdee",
+					"jsonFile" : "target-test_core-RelWithDebInfo-208afc573d0eef2b5800.json",
+					"name" : "test_core",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "E:/Work/SAGE/build",
+		"source" : "E:/Work/SAGE"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 9
+	}
+}

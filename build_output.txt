@@ -1,0 +1,403 @@
+﻿Change Dir: 'E:/Work/SAGE/build_new'
+
+Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe" ALL_BUILD.vcxproj /p:Configuration=Release /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+MSBuild version 17.14.40+3e7442088 for .NET Framework
+Build started 31-01-2026 13:12:47.
+
+Project "E:\Work\SAGE\build_new\ALL_BUILD.vcxproj" on node 1 (default targets).
+Project "E:\Work\SAGE\build_new\ALL_BUILD.vcxproj" (1) is building "E:\Work\SAGE\build_new\ZERO_CHECK.vcxproj" (2) on node 1 (default targets).
+PrepareForBuild:
+  Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+InitializeBuildStatus:
+  Creating "x64\Release\ZERO_CHECK\ZERO_CHECK.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+  Touching "x64\Release\ZERO_CHECK\ZERO_CHECK.tlog\unsuccessfulbuild".
+CustomBuild:
+  All outputs are up-to-date.
+FinalizeBuildStatus:
+  Deleting file "x64\Release\ZERO_CHECK\ZERO_CHECK.tlog\unsuccessfulbuild".
+  Touching "x64\Release\ZERO_CHECK\ZERO_CHECK.tlog\ZERO_CHECK.lastbuildstate".
+Done Building Project "E:\Work\SAGE\build_new\ZERO_CHECK.vcxproj" (default targets).
+Project "E:\Work\SAGE\build_new\ALL_BUILD.vcxproj" (1) is building "E:\Work\SAGE\build_new\tests\benchmark_latency.vcxproj" (3) on node 1 (default targets).
+PrepareForBuild:
+  Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+InitializeBuildStatus:
+  Touching "benchmark_latency.dir\Release\benchmar.4C605809.tlog\unsuccessfulbuild".
+CustomBuild:
+  All outputs are up-to-date.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.44.35207\bin\HostX64\x64\CL.exe /c /IE:\Work\SAGE\src\core /IE:\Work\SAGE\src\types /IE:\Work\SAGE\src\infra /nologo /W4 /WX /diagnostics:column /O2 /Oi /Ot /GL /D _MBCS /D WIN32 /D _WINDOWS /D NDEBUG /D SAGE_BENCHMARK /D "CMAKE_INTDIR=\"Release\"" /EHsc /MD /std:c++20 /permissive- /Fo"benchmark_latency.dir\Release\\" /Fd"benchmark_latency.dir\Release\vc143.pdb" /external:W4 /TP /wd4100 /errorReport:queue  /utf-8 /fno-exceptions E:\Work\SAGE\tests\test_core.cpp
+cl : command line  warning D9002: ignoring unknown option '/fno-exceptions' [E:\Work\SAGE\build_new\tests\benchmark_latency.vcxproj]
+  test_core.cpp
+E:\Work\SAGE\src\core\timing.hpp(27,9): error C2059: syntax error: 'volatile' [E:\Work\SAGE\build_new\tests\benchmark_latency.vcxproj]
+  (compiling source file '../../tests/test_core.cpp')
+  
+E:\Work\SAGE\src\core\timing.hpp(27,51): error C2589: 'string': illegal token on right side of '::' [E:\Work\SAGE\build_new\tests\benchmark_latency.vcxproj]
+  (compiling source file '../../tests/test_core.cpp')
+  
+E:\Work\SAGE\src\core\timing.hpp(37,9): error C2059: syntax error: 'volatile' [E:\Work\SAGE\build_new\tests\benchmark_latency.vcxproj]
+  (compiling source file '../../tests/test_core.cpp')
+  
+E:\Work\SAGE\src\core\timing.hpp(37,63): error C2589: 'string': illegal token on right side of '::' [E:\Work\SAGE\build_new\tests\benchmark_latency.vcxproj]
+  (compiling source file '../../tests/test_core.cpp')
+  
+E:\Work\SAGE\src\core\timing.hpp(47,9): error C2059: syntax error: 'volatile' [E:\Work\SAGE\build_new\tests\benchmark_latency.vcxproj]
+  (compiling source file '../../tests/test_core.cpp')
+  
+E:\Work\SAGE\src\core\timing.hpp(120,19): error C2065: 'CLOCK_MONOTONIC': undeclared identifier [E:\Work\SAGE\build_new\tests\benchmark_latency.vcxproj]
+  (compiling source file '../../tests/test_core.cpp')
+  
+E:\Work\SAGE\src\core\timing.hpp(120,5): error C3861: 'clock_gettime': identifier not found [E:\Work\SAGE\build_new\tests\benchmark_latency.vcxproj]
+  (compiling source file '../../tests/test_core.cpp')
+  
+E:\Work\SAGE\src\core\timing.hpp(130,19): error C2065: 'CLOCK_REALTIME': undeclared identifier [E:\Work\SAGE\build_new\tests\benchmark_latency.vcxproj]
+  (compiling source file '../../tests/test_core.cpp')
+  
+E:\Work\SAGE\src\core\timing.hpp(130,5): error C3861: 'clock_gettime': identifier not found [E:\Work\SAGE\build_new\tests\benchmark_latency.vcxproj]
+  (compiling source file '../../tests/test_core.cpp')
+  
+E:\Work\SAGE\tests\test_core.cpp(264,17): error C2280: 'sage::SageMessage::SageMessage(void)': attempting to reference a deleted function [E:\Work\SAGE\build_new\tests\benchmark_latency.vcxproj]
+      E:\Work\SAGE\src\types\sage_message.hpp(188,1):
+      compiler has generated 'sage::SageMessage::SageMessage' here
+      E:\Work\SAGE\src\types\sage_message.hpp(188,1):
+      'sage::SageMessage::SageMessage(void)': function was implicitly deleted because a data member invokes a deleted or inaccessible function 'sage::SageMessage::<unnamed-type-payload>::<unnamed-type-payload>(void)'
+      E:\Work\SAGE\src\types\sage_message.hpp(134,7):
+      'sage::SageMessage::<unnamed-type-payload>::<unnamed-type-payload>(void)': function was implicitly deleted because 'sage::SageMessage::<unnamed-type-payload>' has a variant data member 'sage::SageMessage::<unnamed-type-payload>::market_data' with a non-trivial default constructor
+      E:\Work\SAGE\src\types\sage_message.hpp(128,20):
+      see declaration of 'sage::SageMessage::<unnamed-type-payload>::market_data'
+  
+Done Building Project "E:\Work\SAGE\build_new\tests\benchmark_latency.vcxproj" (default targets) -- FAILED.
+Project "E:\Work\SAGE\build_new\ALL_BUILD.vcxproj" (1) is building "E:\Work\SAGE\build_new\src\ade\sage_ade.vcxproj" (4) on node 1 (default targets).
+PrepareForBuild:
+  Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+InitializeBuildStatus:
+  Touching "sage_ade.dir\Release\sage_ade.tlog\unsuccessfulbuild".
+CustomBuild:
+  All outputs are up-to-date.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.44.35207\bin\HostX64\x64\CL.exe /c /IE:\Work\SAGE\src\core /IE:\Work\SAGE\src\types /IE:\Work\SAGE\src\infra /IE:\Work\SAGE\src\hpcm /nologo /W4 /WX /diagnostics:column /O2 /Oi /Ot /GL /D _MBCS /D WIN32 /D _WINDOWS /D NDEBUG /D "CMAKE_INTDIR=\"Release\"" /EHsc /MD /std:c++20 /permissive- /Fo"sage_ade.dir\Release\\" /Fd"sage_ade.dir\Release\vc143.pdb" /external:W4 /TP /wd4100 /errorReport:queue  /utf-8 /fno-exceptions E:\Work\SAGE\src\ade\ade_main.cpp
+cl : command line  warning D9002: ignoring unknown option '/fno-exceptions' [E:\Work\SAGE\build_new\src\ade\sage_ade.vcxproj]
+  ade_main.cpp
+E:\Work\SAGE\src\core\timing.hpp(27,9): error C2059: syntax error: 'volatile' [E:\Work\SAGE\build_new\src\ade\sage_ade.vcxproj]
+  (compiling source file '../../../src/ade/ade_main.cpp')
+  
+E:\Work\SAGE\src\core\timing.hpp(27,51): error C2589: 'string': illegal token on right side of '::' [E:\Work\SAGE\build_new\src\ade\sage_ade.vcxproj]
+  (compiling source file '../../../src/ade/ade_main.cpp')
+  
+E:\Work\SAGE\src\core\timing.hpp(37,9): error C2059: syntax error: 'volatile' [E:\Work\SAGE\build_new\src\ade\sage_ade.vcxproj]
+  (compiling source file '../../../src/ade/ade_main.cpp')
+  
+E:\Work\SAGE\src\core\timing.hpp(37,63): error C2589: 'string': illegal token on right side of '::' [E:\Work\SAGE\build_new\src\ade\sage_ade.vcxproj]
+  (compiling source file '../../../src/ade/ade_main.cpp')
+  
+E:\Work\SAGE\src\core\timing.hpp(47,9): error C2059: syntax error: 'volatile' [E:\Work\SAGE\build_new\src\ade\sage_ade.vcxproj]
+  (compiling source file '../../../src/ade/ade_main.cpp')
+  
+E:\Work\SAGE\src\core\timing.hpp(120,19): error C2065: 'CLOCK_MONOTONIC': undeclared identifier [E:\Work\SAGE\build_new\src\ade\sage_ade.vcxproj]
+  (compiling source file '../../../src/ade/ade_main.cpp')
+  
+E:\Work\SAGE\src\core\timing.hpp(120,5): error C3861: 'clock_gettime': identifier not found [E:\Work\SAGE\build_new\src\ade\sage_ade.vcxproj]
+  (compiling source file '../../../src/ade/ade_main.cpp')
+  
+E:\Work\SAGE\src\core\timing.hpp(130,19): error C2065: 'CLOCK_REALTIME': undeclared identifier [E:\Work\SAGE\build_new\src\ade\sage_ade.vcxproj]
+  (compiling source file '../../../src/ade/ade_main.cpp')
+  
+E:\Work\SAGE\src\core\timing.hpp(130,5): error C3861: 'clock_gettime': identifier not found [E:\Work\SAGE\build_new\src\ade\sage_ade.vcxproj]
+  (compiling source file '../../../src/ade/ade_main.cpp')
+  
+E:\Work\SAGE\src\core\cpu_affinity.hpp(9,10): error C1083: Cannot open include file: 'sched.h': No such file or directory [E:\Work\SAGE\build_new\src\ade\sage_ade.vcxproj]
+  (compiling source file '../../../src/ade/ade_main.cpp')
+  
+Done Building Project "E:\Work\SAGE\build_new\src\ade\sage_ade.vcxproj" (default targets) -- FAILED.
+Project "E:\Work\SAGE\build_new\ALL_BUILD.vcxproj" (1) is building "E:\Work\SAGE\build_new\src\cal\sage_cal.vcxproj" (5) on node 1 (default targets).
+PrepareForBuild:
+  Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+InitializeBuildStatus:
+  Touching "sage_cal.dir\Release\sage_cal.tlog\unsuccessfulbuild".
+CustomBuild:
+  All outputs are up-to-date.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.44.35207\bin\HostX64\x64\CL.exe /c /IE:\Work\SAGE\src\core /IE:\Work\SAGE\src\types /IE:\Work\SAGE\src\infra /nologo /W4 /WX /diagnostics:column /O2 /Oi /Ot /GL /D _MBCS /D WIN32 /D _WINDOWS /D NDEBUG /D "CMAKE_INTDIR=\"Release\"" /EHsc /MD /std:c++20 /permissive- /Fo"sage_cal.dir\Release\\" /Fd"sage_cal.dir\Release\vc143.pdb" /external:W4 /TP /wd4100 /errorReport:queue  /utf-8 /fno-exceptions -Wno-unused-function E:\Work\SAGE\src\cal\cal_main.cpp
+cl : command line  error D8021: invalid numeric argument '/Wno-unused-function' [E:\Work\SAGE\build_new\src\cal\sage_cal.vcxproj]
+Done Building Project "E:\Work\SAGE\build_new\src\cal\sage_cal.vcxproj" (default targets) -- FAILED.
+Project "E:\Work\SAGE\build_new\ALL_BUILD.vcxproj" (1) is building "E:\Work\SAGE\build_new\src\poe\sage_poe.vcxproj" (6) on node 1 (default targets).
+PrepareForBuild:
+  Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+InitializeBuildStatus:
+  Touching "sage_poe.dir\Release\sage_poe.tlog\unsuccessfulbuild".
+CustomBuild:
+  All outputs are up-to-date.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.44.35207\bin\HostX64\x64\CL.exe /c /IE:\Work\SAGE\src\core /IE:\Work\SAGE\src\types /IE:\Work\SAGE\src\infra /nologo /W4 /WX /diagnostics:column /O2 /Oi /Ot /GL /D _MBCS /D WIN32 /D _WINDOWS /D NDEBUG /D "CMAKE_INTDIR=\"Release\"" /EHsc /MD /std:c++20 /permissive- /Fo"sage_poe.dir\Release\\" /Fd"sage_poe.dir\Release\vc143.pdb" /external:W4 /TP /wd4100 /errorReport:queue  /utf-8 /fno-exceptions E:\Work\SAGE\src\poe\poe_main.cpp
+cl : command line  warning D9002: ignoring unknown option '/fno-exceptions' [E:\Work\SAGE\build_new\src\poe\sage_poe.vcxproj]
+  poe_main.cpp
+E:\Work\SAGE\src\core\timing.hpp(27,9): error C2059: syntax error: 'volatile' [E:\Work\SAGE\build_new\src\poe\sage_poe.vcxproj]
+  (compiling source file '../../../src/poe/poe_main.cpp')
+  
+E:\Work\SAGE\src\core\timing.hpp(27,51): error C2589: 'string': illegal token on right side of '::' [E:\Work\SAGE\build_new\src\poe\sage_poe.vcxproj]
+  (compiling source file '../../../src/poe/poe_main.cpp')
+  
+E:\Work\SAGE\src\core\timing.hpp(37,9): error C2059: syntax error: 'volatile' [E:\Work\SAGE\build_new\src\poe\sage_poe.vcxproj]
+  (compiling source file '../../../src/poe/poe_main.cpp')
+  
+E:\Work\SAGE\src\core\timing.hpp(37,63): error C2589: 'string': illegal token on right side of '::' [E:\Work\SAGE\build_new\src\poe\sage_poe.vcxproj]
+  (compiling source file '../../../src/poe/poe_main.cpp')
+  
+E:\Work\SAGE\src\core\timing.hpp(47,9): error C2059: syntax error: 'volatile' [E:\Work\SAGE\build_new\src\poe\sage_poe.vcxproj]
+  (compiling source file '../../../src/poe/poe_main.cpp')
+  
+E:\Work\SAGE\src\core\timing.hpp(120,19): error C2065: 'CLOCK_MONOTONIC': undeclared identifier [E:\Work\SAGE\build_new\src\poe\sage_poe.vcxproj]
+  (compiling source file '../../../src/poe/poe_main.cpp')
+  
+E:\Work\SAGE\src\core\timing.hpp(120,5): error C3861: 'clock_gettime': identifier not found [E:\Work\SAGE\build_new\src\poe\sage_poe.vcxproj]
+  (compiling source file '../../../src/poe/poe_main.cpp')
+  
+E:\Work\SAGE\src\core\timing.hpp(130,19): error C2065: 'CLOCK_REALTIME': undeclared identifier [E:\Work\SAGE\build_new\src\poe\sage_poe.vcxproj]
+  (compiling source file '../../../src/poe/poe_main.cpp')
+  
+E:\Work\SAGE\src\core\timing.hpp(130,5): error C3861: 'clock_gettime': identifier not found [E:\Work\SAGE\build_new\src\poe\sage_poe.vcxproj]
+  (compiling source file '../../../src/poe/poe_main.cpp')
+  
+E:\Work\SAGE\src\core\cpu_affinity.hpp(9,10): error C1083: Cannot open include file: 'sched.h': No such file or directory [E:\Work\SAGE\build_new\src\poe\sage_poe.vcxproj]
+  (compiling source file '../../../src/poe/poe_main.cpp')
+  
+Done Building Project "E:\Work\SAGE\build_new\src\poe\sage_poe.vcxproj" (default targets) -- FAILED.
+Project "E:\Work\SAGE\build_new\ALL_BUILD.vcxproj" (1) is building "E:\Work\SAGE\build_new\src\rme\sage_rme.vcxproj" (7) on node 1 (default targets).
+PrepareForBuild:
+  Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+InitializeBuildStatus:
+  Touching "sage_rme.dir\Release\sage_rme.tlog\unsuccessfulbuild".
+CustomBuild:
+  All outputs are up-to-date.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.44.35207\bin\HostX64\x64\CL.exe /c /IE:\Work\SAGE\src\core /IE:\Work\SAGE\src\types /IE:\Work\SAGE\src\infra /nologo /W4 /WX /diagnostics:column /O2 /Oi /Ot /GL /D _MBCS /D WIN32 /D _WINDOWS /D NDEBUG /D "CMAKE_INTDIR=\"Release\"" /EHsc /MD /std:c++20 /permissive- /Fo"sage_rme.dir\Release\\" /Fd"sage_rme.dir\Release\vc143.pdb" /external:W4 /TP /wd4100 /errorReport:queue  /utf-8 /fno-exceptions E:\Work\SAGE\src\rme\rme_main.cpp
+cl : command line  warning D9002: ignoring unknown option '/fno-exceptions' [E:\Work\SAGE\build_new\src\rme\sage_rme.vcxproj]
+  rme_main.cpp
+E:\Work\SAGE\src\core\timing.hpp(27,9): error C2059: syntax error: 'volatile' [E:\Work\SAGE\build_new\src\rme\sage_rme.vcxproj]
+  (compiling source file '../../../src/rme/rme_main.cpp')
+  
+E:\Work\SAGE\src\core\timing.hpp(27,51): error C2589: 'string': illegal token on right side of '::' [E:\Work\SAGE\build_new\src\rme\sage_rme.vcxproj]
+  (compiling source file '../../../src/rme/rme_main.cpp')
+  
+E:\Work\SAGE\src\core\timing.hpp(37,9): error C2059: syntax error: 'volatile' [E:\Work\SAGE\build_new\src\rme\sage_rme.vcxproj]
+  (compiling source file '../../../src/rme/rme_main.cpp')
+  
+E:\Work\SAGE\src\core\timing.hpp(37,63): error C2589: 'string': illegal token on right side of '::' [E:\Work\SAGE\build_new\src\rme\sage_rme.vcxproj]
+  (compiling source file '../../../src/rme/rme_main.cpp')
+  
+E:\Work\SAGE\src\core\timing.hpp(47,9): error C2059: syntax error: 'volatile' [E:\Work\SAGE\build_new\src\rme\sage_rme.vcxproj]
+  (compiling source file '../../../src/rme/rme_main.cpp')
+  
+E:\Work\SAGE\src\core\timing.hpp(120,19): error C2065: 'CLOCK_MONOTONIC': undeclared identifier [E:\Work\SAGE\build_new\src\rme\sage_rme.vcxproj]
+  (compiling source file '../../../src/rme/rme_main.cpp')
+  
+E:\Work\SAGE\src\core\timing.hpp(120,5): error C3861: 'clock_gettime': identifier not found [E:\Work\SAGE\build_new\src\rme\sage_rme.vcxproj]
+  (compiling source file '../../../src/rme/rme_main.cpp')
+  
+E:\Work\SAGE\src\core\timing.hpp(130,19): error C2065: 'CLOCK_REALTIME': undeclared identifier [E:\Work\SAGE\build_new\src\rme\sage_rme.vcxproj]
+  (compiling source file '../../../src/rme/rme_main.cpp')
+  
+E:\Work\SAGE\src\core\timing.hpp(130,5): error C3861: 'clock_gettime': identifier not found [E:\Work\SAGE\build_new\src\rme\sage_rme.vcxproj]
+  (compiling source file '../../../src/rme/rme_main.cpp')
+  
+E:\Work\SAGE\src\core\cpu_affinity.hpp(9,10): error C1083: Cannot open include file: 'sched.h': No such file or directory [E:\Work\SAGE\build_new\src\rme\sage_rme.vcxproj]
+  (compiling source file '../../../src/rme/rme_main.cpp')
+  
+Done Building Project "E:\Work\SAGE\build_new\src\rme\sage_rme.vcxproj" (default targets) -- FAILED.
+Project "E:\Work\SAGE\build_new\ALL_BUILD.vcxproj" (1) is building "E:\Work\SAGE\build_new\tests\test_audit_durability.vcxproj" (8) on node 1 (default targets).
+PrepareForBuild:
+  Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+InitializeBuildStatus:
+  Touching "test_audit_durability.dir\Release\test_aud.76C08E4E.tlog\unsuccessfulbuild".
+CustomBuild:
+  All outputs are up-to-date.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.44.35207\bin\HostX64\x64\CL.exe /c /IE:\Work\SAGE\src\core /IE:\Work\SAGE\src\types /IE:\Work\SAGE\src\infra /nologo /W4 /WX /diagnostics:column /O2 /Oi /Ot /GL /D _MBCS /D WIN32 /D _WINDOWS /D NDEBUG /D "CMAKE_INTDIR=\"Release\"" /EHsc /MD /std:c++20 /permissive- /Fo"test_audit_durability.dir\Release\\" /Fd"test_audit_durability.dir\Release\vc143.pdb" /external:W4 /TP /wd4100 /errorReport:queue  /utf-8 /fno-exceptions E:\Work\SAGE\tests\audit_durability_test.cpp
+cl : command line  warning D9002: ignoring unknown option '/fno-exceptions' [E:\Work\SAGE\build_new\tests\test_audit_durability.vcxproj]
+  audit_durability_test.cpp
+E:\Work\SAGE\src\poe\audit_log.hpp(157,13): error C2220: the following warning is treated as an error [E:\Work\SAGE\build_new\tests\test_audit_durability.vcxproj]
+  (compiling source file '../../tests/audit_durability_test.cpp')
+  
+E:\Work\SAGE\src\poe\audit_log.hpp(157,13): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details. [E:\Work\SAGE\build_new\tests\test_audit_durability.vcxproj]
+  (compiling source file '../../tests/audit_durability_test.cpp')
+  
+E:\Work\SAGE\src\poe\audit_log.hpp(264,30): warning C4996: 'gmtime': This function or variable may be unsafe. Consider using gmtime_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details. [E:\Work\SAGE\build_new\tests\test_audit_durability.vcxproj]
+  (compiling source file '../../tests/audit_durability_test.cpp')
+  
+E:\Work\SAGE\src\poe\audit_log.hpp(273,30): warning C4996: 'localtime': This function or variable may be unsafe. Consider using localtime_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details. [E:\Work\SAGE\build_new\tests\test_audit_durability.vcxproj]
+  (compiling source file '../../tests/audit_durability_test.cpp')
+  
+E:\Work\SAGE\tests\audit_durability_test.cpp(42,13): warning C4505: 'file_contains': unreferenced function with internal linkage has been removed [E:\Work\SAGE\build_new\tests\test_audit_durability.vcxproj]
+Done Building Project "E:\Work\SAGE\build_new\tests\test_audit_durability.vcxproj" (default targets) -- FAILED.
+Project "E:\Work\SAGE\build_new\ALL_BUILD.vcxproj" (1) is building "E:\Work\SAGE\build_new\tests\test_core.vcxproj" (9) on node 1 (default targets).
+PrepareForBuild:
+  Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+InitializeBuildStatus:
+  Touching "test_core.dir\Release\test_core.tlog\unsuccessfulbuild".
+CustomBuild:
+  All outputs are up-to-date.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.44.35207\bin\HostX64\x64\CL.exe /c /IE:\Work\SAGE\src\core /IE:\Work\SAGE\src\types /IE:\Work\SAGE\src\infra /nologo /W4 /WX /diagnostics:column /O2 /Oi /Ot /GL /D _MBCS /D WIN32 /D _WINDOWS /D NDEBUG /D "CMAKE_INTDIR=\"Release\"" /EHsc /MD /std:c++20 /permissive- /Fo"test_core.dir\Release\\" /Fd"test_core.dir\Release\vc143.pdb" /external:W4 /TP /wd4100 /errorReport:queue  /utf-8 /fno-exceptions E:\Work\SAGE\tests\test_core.cpp
+cl : command line  warning D9002: ignoring unknown option '/fno-exceptions' [E:\Work\SAGE\build_new\tests\test_core.vcxproj]
+  test_core.cpp
+E:\Work\SAGE\src\core\timing.hpp(27,9): error C2059: syntax error: 'volatile' [E:\Work\SAGE\build_new\tests\test_core.vcxproj]
+  (compiling source file '../../tests/test_core.cpp')
+  
+E:\Work\SAGE\src\core\timing.hpp(27,51): error C2589: 'string': illegal token on right side of '::' [E:\Work\SAGE\build_new\tests\test_core.vcxproj]
+  (compiling source file '../../tests/test_core.cpp')
+  
+E:\Work\SAGE\src\core\timing.hpp(37,9): error C2059: syntax error: 'volatile' [E:\Work\SAGE\build_new\tests\test_core.vcxproj]
+  (compiling source file '../../tests/test_core.cpp')
+  
+E:\Work\SAGE\src\core\timing.hpp(37,63): error C2589: 'string': illegal token on right side of '::' [E:\Work\SAGE\build_new\tests\test_core.vcxproj]
+  (compiling source file '../../tests/test_core.cpp')
+  
+E:\Work\SAGE\src\core\timing.hpp(47,9): error C2059: syntax error: 'volatile' [E:\Work\SAGE\build_new\tests\test_core.vcxproj]
+  (compiling source file '../../tests/test_core.cpp')
+  
+E:\Work\SAGE\src\core\timing.hpp(120,19): error C2065: 'CLOCK_MONOTONIC': undeclared identifier [E:\Work\SAGE\build_new\tests\test_core.vcxproj]
+  (compiling source file '../../tests/test_core.cpp')
+  
+E:\Work\SAGE\src\core\timing.hpp(120,5): error C3861: 'clock_gettime': identifier not found [E:\Work\SAGE\build_new\tests\test_core.vcxproj]
+  (compiling source file '../../tests/test_core.cpp')
+  
+E:\Work\SAGE\src\core\timing.hpp(130,19): error C2065: 'CLOCK_REALTIME': undeclared identifier [E:\Work\SAGE\build_new\tests\test_core.vcxproj]
+  (compiling source file '../../tests/test_core.cpp')
+  
+E:\Work\SAGE\src\core\timing.hpp(130,5): error C3861: 'clock_gettime': identifier not found [E:\Work\SAGE\build_new\tests\test_core.vcxproj]
+  (compiling source file '../../tests/test_core.cpp')
+  
+E:\Work\SAGE\tests\test_core.cpp(264,17): error C2280: 'sage::SageMessage::SageMessage(void)': attempting to reference a deleted function [E:\Work\SAGE\build_new\tests\test_core.vcxproj]
+      E:\Work\SAGE\src\types\sage_message.hpp(188,1):
+      compiler has generated 'sage::SageMessage::SageMessage' here
+      E:\Work\SAGE\src\types\sage_message.hpp(188,1):
+      'sage::SageMessage::SageMessage(void)': function was implicitly deleted because a data member invokes a deleted or inaccessible function 'sage::SageMessage::<unnamed-type-payload>::<unnamed-type-payload>(void)'
+      E:\Work\SAGE\src\types\sage_message.hpp(134,7):
+      'sage::SageMessage::<unnamed-type-payload>::<unnamed-type-payload>(void)': function was implicitly deleted because 'sage::SageMessage::<unnamed-type-payload>' has a variant data member 'sage::SageMessage::<unnamed-type-payload>::market_data' with a non-trivial default constructor
+      E:\Work\SAGE\src\types\sage_message.hpp(128,20):
+      see declaration of 'sage::SageMessage::<unnamed-type-payload>::market_data'
+  
+Done Building Project "E:\Work\SAGE\build_new\tests\test_core.vcxproj" (default targets) -- FAILED.
+Done Building Project "E:\Work\SAGE\build_new\ALL_BUILD.vcxproj" (default targets) -- FAILED.
+
+Build FAILED.
+
+"E:\Work\SAGE\build_new\ALL_BUILD.vcxproj" (default target) (1) ->
+"E:\Work\SAGE\build_new\tests\benchmark_latency.vcxproj" (default target) (3) ->
+(ClCompile target) -> 
+  cl : command line  warning D9002: ignoring unknown option '/fno-exceptions' [E:\Work\SAGE\build_new\tests\benchmark_latency.vcxproj]
+
+
+"E:\Work\SAGE\build_new\ALL_BUILD.vcxproj" (default target) (1) ->
+"E:\Work\SAGE\build_new\src\ade\sage_ade.vcxproj" (default target) (4) ->
+  cl : command line  warning D9002: ignoring unknown option '/fno-exceptions' [E:\Work\SAGE\build_new\src\ade\sage_ade.vcxproj]
+
+
+"E:\Work\SAGE\build_new\ALL_BUILD.vcxproj" (default target) (1) ->
+"E:\Work\SAGE\build_new\src\poe\sage_poe.vcxproj" (default target) (6) ->
+  cl : command line  warning D9002: ignoring unknown option '/fno-exceptions' [E:\Work\SAGE\build_new\src\poe\sage_poe.vcxproj]
+
+
+"E:\Work\SAGE\build_new\ALL_BUILD.vcxproj" (default target) (1) ->
+"E:\Work\SAGE\build_new\src\rme\sage_rme.vcxproj" (default target) (7) ->
+  cl : command line  warning D9002: ignoring unknown option '/fno-exceptions' [E:\Work\SAGE\build_new\src\rme\sage_rme.vcxproj]
+
+
+"E:\Work\SAGE\build_new\ALL_BUILD.vcxproj" (default target) (1) ->
+"E:\Work\SAGE\build_new\tests\test_audit_durability.vcxproj" (default target) (8) ->
+  cl : command line  warning D9002: ignoring unknown option '/fno-exceptions' [E:\Work\SAGE\build_new\tests\test_audit_durability.vcxproj]
+  E:\Work\SAGE\src\poe\audit_log.hpp(157,13): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details. [E:\Work\SAGE\build_new\tests\test_audit_durability.vcxproj]
+  E:\Work\SAGE\src\poe\audit_log.hpp(264,30): warning C4996: 'gmtime': This function or variable may be unsafe. Consider using gmtime_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details. [E:\Work\SAGE\build_new\tests\test_audit_durability.vcxproj]
+  E:\Work\SAGE\src\poe\audit_log.hpp(273,30): warning C4996: 'localtime': This function or variable may be unsafe. Consider using localtime_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details. [E:\Work\SAGE\build_new\tests\test_audit_durability.vcxproj]
+  E:\Work\SAGE\tests\audit_durability_test.cpp(42,13): warning C4505: 'file_contains': unreferenced function with internal linkage has been removed [E:\Work\SAGE\build_new\tests\test_audit_durability.vcxproj]
+
+
+"E:\Work\SAGE\build_new\ALL_BUILD.vcxproj" (default target) (1) ->
+"E:\Work\SAGE\build_new\tests\test_core.vcxproj" (default target) (9) ->
+  cl : command line  warning D9002: ignoring unknown option '/fno-exceptions' [E:\Work\SAGE\build_new\tests\test_core.vcxproj]
+
+
+"E:\Work\SAGE\build_new\ALL_BUILD.vcxproj" (default target) (1) ->
+"E:\Work\SAGE\build_new\tests\benchmark_latency.vcxproj" (default target) (3) ->
+(ClCompile target) -> 
+  E:\Work\SAGE\src\core\timing.hpp(27,9): error C2059: syntax error: 'volatile' [E:\Work\SAGE\build_new\tests\benchmark_latency.vcxproj]
+  E:\Work\SAGE\src\core\timing.hpp(27,51): error C2589: 'string': illegal token on right side of '::' [E:\Work\SAGE\build_new\tests\benchmark_latency.vcxproj]
+  E:\Work\SAGE\src\core\timing.hpp(37,9): error C2059: syntax error: 'volatile' [E:\Work\SAGE\build_new\tests\benchmark_latency.vcxproj]
+  E:\Work\SAGE\src\core\timing.hpp(37,63): error C2589: 'string': illegal token on right side of '::' [E:\Work\SAGE\build_new\tests\benchmark_latency.vcxproj]
+  E:\Work\SAGE\src\core\timing.hpp(47,9): error C2059: syntax error: 'volatile' [E:\Work\SAGE\build_new\tests\benchmark_latency.vcxproj]
+  E:\Work\SAGE\src\core\timing.hpp(120,19): error C2065: 'CLOCK_MONOTONIC': undeclared identifier [E:\Work\SAGE\build_new\tests\benchmark_latency.vcxproj]
+  E:\Work\SAGE\src\core\timing.hpp(120,5): error C3861: 'clock_gettime': identifier not found [E:\Work\SAGE\build_new\tests\benchmark_latency.vcxproj]
+  E:\Work\SAGE\src\core\timing.hpp(130,19): error C2065: 'CLOCK_REALTIME': undeclared identifier [E:\Work\SAGE\build_new\tests\benchmark_latency.vcxproj]
+  E:\Work\SAGE\src\core\timing.hpp(130,5): error C3861: 'clock_gettime': identifier not found [E:\Work\SAGE\build_new\tests\benchmark_latency.vcxproj]
+  E:\Work\SAGE\tests\test_core.cpp(264,17): error C2280: 'sage::SageMessage::SageMessage(void)': attempting to reference a deleted function [E:\Work\SAGE\build_new\tests\benchmark_latency.vcxproj]
+
+
+"E:\Work\SAGE\build_new\ALL_BUILD.vcxproj" (default target) (1) ->
+"E:\Work\SAGE\build_new\src\ade\sage_ade.vcxproj" (default target) (4) ->
+  E:\Work\SAGE\src\core\timing.hpp(27,9): error C2059: syntax error: 'volatile' [E:\Work\SAGE\build_new\src\ade\sage_ade.vcxproj]
+  E:\Work\SAGE\src\core\timing.hpp(27,51): error C2589: 'string': illegal token on right side of '::' [E:\Work\SAGE\build_new\src\ade\sage_ade.vcxproj]
+  E:\Work\SAGE\src\core\timing.hpp(37,9): error C2059: syntax error: 'volatile' [E:\Work\SAGE\build_new\src\ade\sage_ade.vcxproj]
+  E:\Work\SAGE\src\core\timing.hpp(37,63): error C2589: 'string': illegal token on right side of '::' [E:\Work\SAGE\build_new\src\ade\sage_ade.vcxproj]
+  E:\Work\SAGE\src\core\timing.hpp(47,9): error C2059: syntax error: 'volatile' [E:\Work\SAGE\build_new\src\ade\sage_ade.vcxproj]
+  E:\Work\SAGE\src\core\timing.hpp(120,19): error C2065: 'CLOCK_MONOTONIC': undeclared identifier [E:\Work\SAGE\build_new\src\ade\sage_ade.vcxproj]
+  E:\Work\SAGE\src\core\timing.hpp(120,5): error C3861: 'clock_gettime': identifier not found [E:\Work\SAGE\build_new\src\ade\sage_ade.vcxproj]
+  E:\Work\SAGE\src\core\timing.hpp(130,19): error C2065: 'CLOCK_REALTIME': undeclared identifier [E:\Work\SAGE\build_new\src\ade\sage_ade.vcxproj]
+  E:\Work\SAGE\src\core\timing.hpp(130,5): error C3861: 'clock_gettime': identifier not found [E:\Work\SAGE\build_new\src\ade\sage_ade.vcxproj]
+  E:\Work\SAGE\src\core\cpu_affinity.hpp(9,10): error C1083: Cannot open include file: 'sched.h': No such file or directory [E:\Work\SAGE\build_new\src\ade\sage_ade.vcxproj]
+
+
+"E:\Work\SAGE\build_new\ALL_BUILD.vcxproj" (default target) (1) ->
+"E:\Work\SAGE\build_new\src\cal\sage_cal.vcxproj" (default target) (5) ->
+  cl : command line  error D8021: invalid numeric argument '/Wno-unused-function' [E:\Work\SAGE\build_new\src\cal\sage_cal.vcxproj]
+
+
+"E:\Work\SAGE\build_new\ALL_BUILD.vcxproj" (default target) (1) ->
+"E:\Work\SAGE\build_new\src\poe\sage_poe.vcxproj" (default target) (6) ->
+  E:\Work\SAGE\src\core\timing.hpp(27,9): error C2059: syntax error: 'volatile' [E:\Work\SAGE\build_new\src\poe\sage_poe.vcxproj]
+  E:\Work\SAGE\src\core\timing.hpp(27,51): error C2589: 'string': illegal token on right side of '::' [E:\Work\SAGE\build_new\src\poe\sage_poe.vcxproj]
+  E:\Work\SAGE\src\core\timing.hpp(37,9): error C2059: syntax error: 'volatile' [E:\Work\SAGE\build_new\src\poe\sage_poe.vcxproj]
+  E:\Work\SAGE\src\core\timing.hpp(37,63): error C2589: 'string': illegal token on right side of '::' [E:\Work\SAGE\build_new\src\poe\sage_poe.vcxproj]
+  E:\Work\SAGE\src\core\timing.hpp(47,9): error C2059: syntax error: 'volatile' [E:\Work\SAGE\build_new\src\poe\sage_poe.vcxproj]
+  E:\Work\SAGE\src\core\timing.hpp(120,19): error C2065: 'CLOCK_MONOTONIC': undeclared identifier [E:\Work\SAGE\build_new\src\poe\sage_poe.vcxproj]
+  E:\Work\SAGE\src\core\timing.hpp(120,5): error C3861: 'clock_gettime': identifier not found [E:\Work\SAGE\build_new\src\poe\sage_poe.vcxproj]
+  E:\Work\SAGE\src\core\timing.hpp(130,19): error C2065: 'CLOCK_REALTIME': undeclared identifier [E:\Work\SAGE\build_new\src\poe\sage_poe.vcxproj]
+  E:\Work\SAGE\src\core\timing.hpp(130,5): error C3861: 'clock_gettime': identifier not found [E:\Work\SAGE\build_new\src\poe\sage_poe.vcxproj]
+  E:\Work\SAGE\src\core\cpu_affinity.hpp(9,10): error C1083: Cannot open include file: 'sched.h': No such file or directory [E:\Work\SAGE\build_new\src\poe\sage_poe.vcxproj]
+
+
+"E:\Work\SAGE\build_new\ALL_BUILD.vcxproj" (default target) (1) ->
+"E:\Work\SAGE\build_new\src\rme\sage_rme.vcxproj" (default target) (7) ->
+  E:\Work\SAGE\src\core\timing.hpp(27,9): error C2059: syntax error: 'volatile' [E:\Work\SAGE\build_new\src\rme\sage_rme.vcxproj]
+  E:\Work\SAGE\src\core\timing.hpp(27,51): error C2589: 'string': illegal token on right side of '::' [E:\Work\SAGE\build_new\src\rme\sage_rme.vcxproj]
+  E:\Work\SAGE\src\core\timing.hpp(37,9): error C2059: syntax error: 'volatile' [E:\Work\SAGE\build_new\src\rme\sage_rme.vcxproj]
+  E:\Work\SAGE\src\core\timing.hpp(37,63): error C2589: 'string': illegal token on right side of '::' [E:\Work\SAGE\build_new\src\rme\sage_rme.vcxproj]
+  E:\Work\SAGE\src\core\timing.hpp(47,9): error C2059: syntax error: 'volatile' [E:\Work\SAGE\build_new\src\rme\sage_rme.vcxproj]
+  E:\Work\SAGE\src\core\timing.hpp(120,19): error C2065: 'CLOCK_MONOTONIC': undeclared identifier [E:\Work\SAGE\build_new\src\rme\sage_rme.vcxproj]
+  E:\Work\SAGE\src\core\timing.hpp(120,5): error C3861: 'clock_gettime': identifier not found [E:\Work\SAGE\build_new\src\rme\sage_rme.vcxproj]
+  E:\Work\SAGE\src\core\timing.hpp(130,19): error C2065: 'CLOCK_REALTIME': undeclared identifier [E:\Work\SAGE\build_new\src\rme\sage_rme.vcxproj]
+  E:\Work\SAGE\src\core\timing.hpp(130,5): error C3861: 'clock_gettime': identifier not found [E:\Work\SAGE\build_new\src\rme\sage_rme.vcxproj]
+  E:\Work\SAGE\src\core\cpu_affinity.hpp(9,10): error C1083: Cannot open include file: 'sched.h': No such file or directory [E:\Work\SAGE\build_new\src\rme\sage_rme.vcxproj]
+
+
+"E:\Work\SAGE\build_new\ALL_BUILD.vcxproj" (default target) (1) ->
+"E:\Work\SAGE\build_new\tests\test_audit_durability.vcxproj" (default target) (8) ->
+  E:\Work\SAGE\src\poe\audit_log.hpp(157,13): error C2220: the following warning is treated as an error [E:\Work\SAGE\build_new\tests\test_audit_durability.vcxproj]
+
+
+"E:\Work\SAGE\build_new\ALL_BUILD.vcxproj" (default target) (1) ->
+"E:\Work\SAGE\build_new\tests\test_core.vcxproj" (default target) (9) ->
+  E:\Work\SAGE\src\core\timing.hpp(27,9): error C2059: syntax error: 'volatile' [E:\Work\SAGE\build_new\tests\test_core.vcxproj]
+  E:\Work\SAGE\src\core\timing.hpp(27,51): error C2589: 'string': illegal token on right side of '::' [E:\Work\SAGE\build_new\tests\test_core.vcxproj]
+  E:\Work\SAGE\src\core\timing.hpp(37,9): error C2059: syntax error: 'volatile' [E:\Work\SAGE\build_new\tests\test_core.vcxproj]
+  E:\Work\SAGE\src\core\timing.hpp(37,63): error C2589: 'string': illegal token on right side of '::' [E:\Work\SAGE\build_new\tests\test_core.vcxproj]
+  E:\Work\SAGE\src\core\timing.hpp(47,9): error C2059: syntax error: 'volatile' [E:\Work\SAGE\build_new\tests\test_core.vcxproj]
+  E:\Work\SAGE\src\core\timing.hpp(120,19): error C2065: 'CLOCK_MONOTONIC': undeclared identifier [E:\Work\SAGE\build_new\tests\test_core.vcxproj]
+  E:\Work\SAGE\src\core\timing.hpp(120,5): error C3861: 'clock_gettime': identifier not found [E:\Work\SAGE\build_new\tests\test_core.vcxproj]
+  E:\Work\SAGE\src\core\timing.hpp(130,19): error C2065: 'CLOCK_REALTIME': undeclared identifier [E:\Work\SAGE\build_new\tests\test_core.vcxproj]
+  E:\Work\SAGE\src\core\timing.hpp(130,5): error C3861: 'clock_gettime': identifier not found [E:\Work\SAGE\build_new\tests\test_core.vcxproj]
+  E:\Work\SAGE\tests\test_core.cpp(264,17): error C2280: 'sage::SageMessage::SageMessage(void)': attempting to reference a deleted function [E:\Work\SAGE\build_new\tests\test_core.vcxproj]
+
+    10 Warning(s)
+    52 Error(s)
+
+Time Elapsed 00:00:08.19
+

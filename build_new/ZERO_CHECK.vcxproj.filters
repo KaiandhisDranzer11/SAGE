@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="E:\Work\SAGE\build_new\CMakeFiles\2b5b159b70efc28f518d25b0d7510997\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{734FC438-470D-36B9-883C-58888315067B}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

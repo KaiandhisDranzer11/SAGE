@@ -1,0 +1,83 @@
+{
+	"backtrace" : 0,
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : 
+		[
+			"CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			}
+		]
+	},
+	"codemodelVersion" : 
+	{
+		"major" : 2,
+		"minor" : 9
+	},
+	"dependencies" : 
+	[
+		{
+			"id" : "sage_cal::@0bcb47ac1c1a18101965"
+		},
+		{
+			"id" : "sage_poe::@8f607f64d8453e2c878d"
+		},
+		{
+			"id" : "sage_ade::@24ea2e42cd7dff5f2e4b"
+		},
+		{
+			"id" : "sage_rme::@15f6e08049de0fa295dc"
+		},
+		{
+			"id" : "test_audit_durability::@a44f0ac069e85531cdee"
+		},
+		{
+			"id" : "benchmark_latency::@a44f0ac069e85531cdee"
+		},
+		{
+			"id" : "test_core::@a44f0ac069e85531cdee"
+		},
+		{
+			"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df"
+		}
+	],
+	"id" : "ALL_BUILD::@6890427a1f51a3e7e1df",
+	"isGeneratorProvided" : true,
+	"name" : "ALL_BUILD",
+	"orderDependencies" : 
+	[
+		{
+			"id" : "sage_cal::@0bcb47ac1c1a18101965"
+		},
+		{
+			"id" : "sage_poe::@8f607f64d8453e2c878d"
+		},
+		{
+			"id" : "sage_ade::@24ea2e42cd7dff5f2e4b"
+		},
+		{
+			"id" : "sage_rme::@15f6e08049de0fa295dc"
+		},
+		{
+			"id" : "test_audit_durability::@a44f0ac069e85531cdee"
+		},
+		{
+			"id" : "benchmark_latency::@a44f0ac069e85531cdee"
+		},
+		{
+			"id" : "test_core::@a44f0ac069e85531cdee"
+		}
+	],
+	"paths" : 
+	{
+		"build" : ".",
+		"source" : "."
+	},
+	"sources" : [],
+	"type" : "UTILITY"
+}
