@@ -98,4 +98,4 @@ All orders are logged to `sage_audit.log` BEFORE transmission to exchange.
 
 ## License
 
-Proprietary - Internal Use Only
+Apache 2.0
